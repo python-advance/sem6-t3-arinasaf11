@@ -20,7 +20,7 @@ class CurrencyBoard:
 
             cur_res_xml = ET.parse(cur_res_str)
 
-            root = cur_res_xml.getroot()
+            root = cur_res_xml.getroot()#Чтобы получить ссылку на корневой элемент, необходимо вызвать метод getroot().
             valutes = root.findall('Valute')
             for el in valutes:
                 valute_id = el.get('ID')
